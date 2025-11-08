@@ -54,7 +54,10 @@ python scraper.py
 ### 4. Deploy com Gunicorn (Recomendado)
 
 ```bash
-# Inicie o servidor com gunicorn
+# Para Render (uso de memória otimizado)
+gunicorn -w 2 -b 0.0.0.0:$PORT app:app
+
+# Para VPS/Linux (mais recursos disponíveis)
 gunicorn -w 4 -b 0.0.0.0:8000 app:app
 
 # Para background (Linux)

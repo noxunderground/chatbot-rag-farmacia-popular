@@ -18,12 +18,20 @@ class RAGEngine:
             # Carregar documentos
             self._load_documents()
             
-            # Carregar modelo de embeddings
-            self.model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+            # Carregar modelo de embeddings (versão mais leve)
+            self.model = SentenceTransformer('paraphrase-MiniLM-L6-v2')  # Modelo menor
             
-            # Criar embeddings para os documentos
-            self.document_embeddings = self.model.encode(self.documents)
+            # Criar embeddings para os documentos em lotes menores
+            batch_size = min(5, len(self.documents))  # Processar no máximo 5 docs por vez
+            self.document_embeddings = []
             
+            for i in range(0, len(self.documents), batch_size):
+                batch = self.documents[i:i+batch_size]
+                batch_embeddings = self.model.encode(batch)
+                self.document_embeddings.extend(batch_embeddings)
+                print(f"Processados {min(i+batch_size, len(self.documents))} de {len(self.documents)} documentos")
+            
+            self.document_embeddings = np.array(self.document_embeddings)
             self.initialized = True
             print("RAG Engine inicializado com sucesso!")
             
