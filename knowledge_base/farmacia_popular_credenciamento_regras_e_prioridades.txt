@@ -1,0 +1,8 @@
+A lista de municípios com vagas para credenciamento é atualizada mensalmente pelo Ministério da Saúde, considerando:
+- Novos credenciamentos
+- Descredenciamentos
+- Alterações de endereço de estabelecimentos já credenciados
+
+Para iniciar o pedido, é necessário consultar o Edital de Convocação.
+
+A análise dos pedidos segue a ordem cronológica de inscrição por município, desde que todos os requisitos previstos no edital sejam atendidos.

@@ -1,0 +1,68 @@
+1. Asma
+Princípio ativo	Apresentação / Concentração
+Brometo de ipratrópio	0,02 mg
+Brometo de ipratrópio	0,25 mg
+Dipropionato de beclometasona	50 mcg
+Dipropionato de beclometasona	200 mcg
+Dipropionato de beclometasona	250 mcg
+Sulfato de salbutamol	100 mcg
+Sulfato de salbutamol	5 mg
+2. Diabetes
+Princípio ativo	Apresentação / Concentração
+Cloridrato de metformina	500 mg
+Cloridrato de metformina (ação prolongada)	500 mg
+Cloridrato de metformina	850 mg
+Glibenclamida	5 mg
+Insulina humana regular	100 UI/mL
+Insulina humana NPH	100 UI/mL
+3. Hipertensão
+Princípio ativo	Concentração
+Atenolol	25 mg
+Besilato de anlodipino	5 mg
+Captopril	25 mg
+Cloridrato de propranolol	40 mg
+Hidroclorotiazida	25 mg
+Losartana potássica	50 mg
+Maleato de enalapril	10 mg
+Espironolactona	25 mg
+Furosemida	40 mg
+Succinato de metoprolol	25 mg
+4. Anticoncepção
+Princípio ativo	Apresentação
+Acetato de medroxiprogesterona	150 mg (injeção)
+Etinilestradiol + Levonorgestrel	0,03 mg + 0,15 mg
+Noretisterona	0,35 mg
+Valerato de estradiol + Enantato de noretisterona	5 mg + 50 mg (injeção)
+5. Osteoporose
+Princípio ativo	Concentração
+Alendronato de sódio	70 mg
+6. Dislipidemia
+Princípio ativo	Concentração
+Sinvastatina	10 mg
+Sinvastatina	20 mg
+Sinvastatina	40 mg
+7. Doença de Parkinson
+Associação	Concentração
+Carbidopa + Levodopa	25 mg + 250 mg
+Cloridrato de benserazida + Levodopa	25 mg + 100 mg
+8. Glaucoma
+Princípio ativo	Concentração
+Maleato de timolol	2,5 mg
+Maleato de timolol	5 mg
+9. Rinite
+Princípio ativo	Concentração / Forma
+Budesonida	32 mcg
+Budesonida	50 mcg
+Dipropionato de beclometasona	50 mcg por dose
+10. Diabetes Mellitus + Doença Cardiovascular
+Princípio ativo	Concentração
+Dapagliflozina	10 mg
+11. Dignidade Menstrual
+Insumo
+Absorvente higiênico
+12. Incontinência Urinária
+Insumo
+Fralda geriátrica
+
+Data de atualização: 21/01/2025
+Fonte / Responsável: PHFB – Programa Farmácia Popular do Brasil
