@@ -2,8 +2,9 @@
 Flask>=2.0.0
 gunicorn>=20.0.0
 
-# RAG / NLP - Versões mais leves
-sentence-transformers==2.2.2
+# RAG / NLP - Versões compatíveis
+sentence-transformers==2.7.0
+huggingface-hub==0.16.4
 numpy>=1.21.0
 scikit-learn>=1.1.0
 
