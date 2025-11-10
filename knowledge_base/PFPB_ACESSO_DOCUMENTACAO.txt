@@ -1,0 +1,25 @@
+Para obter medicamentos ou insumos no PFPB, o paciente deve comparecer a um estabelecimento credenciado, identificado pela logomarca do Programa.
+
+**Documentação para Medicamentos/Fraldas**
+O beneficiário deve apresentar os seguintes documentos:
+1.  **Documento oficial com foto** e número do **CPF** (ou documento de identidade onde o CPF conste).
+2.  **Receita médica** dentro do prazo de validade (tanto do SUS quanto de serviços particulares).
+
+**Requisitos Específicos**
+*   **Fraldas Geriátricas:** O paciente deve ter **idade igual ou superior a 60 anos** ou ser **pessoa com deficiência**. Deve apresentar prescrição, laudo ou atestado médico que indique a necessidade do uso, com a respectiva Classificação Internacional de Doenças (CID) no caso de deficiência.
+*   **Contraceptivos:** A validade da receita para contraceptivos é de **365 dias** (12 meses).
+*   **Demais Receitas:** A validade padrão da prescrição, laudo ou atestado médico é de **180 dias** (4 meses) a partir da data de emissão.
+
+**Aquisição por Terceiros (Representante Legal)**
+Para pacientes acamados ou impossibilitados de comparecer, o representante legal ou procurador deve se dirigir ao estabelecimento credenciado, apresentando:
+*   Receita médica válida.
+*   Documento oficial com foto e CPF do beneficiário titular da receita (ou certidão de nascimento/RG se menor de idade).
+*   Documento oficial com foto e CPF do representante legal.
+*   Um instrumento que comprove a representação legal, como procuração pública ou particular (esta última com reconhecimento de firma ou assinatura eletrônica).
+
+**Documentação para Absorventes Higiênicos (Programa Dignidade Menstrual)**
+A aquisição de absorventes higiênicos, iniciada em janeiro de 2024, beneficia pessoas entre 10 e 49 anos inscritas no Cadastro Único (CadÚnico), como estudantes de escolas públicas de baixa renda, ou pessoas em situação de rua/vulnerabilidade extrema.
+O beneficiário deve apresentar:
+1.  Documento oficial com foto e CPF.
+2.  **Documento de Autorização do Programa Dignidade Menstrual**, gerado exclusivamente via aplicativo ou site do **Meu SUS Digital**, em formato digital ou impresso, com validade de 180 dias.
+*   A aquisição para menores de 16 anos deve ser realizada por seu responsável legal.

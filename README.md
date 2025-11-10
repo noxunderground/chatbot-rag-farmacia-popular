@@ -2,6 +2,55 @@
 
 Chatbot inteligente baseado em RAG (Retrieval-Augmented Generation) para responder perguntas sobre o Programa Farmácia Popular do Brasil.
 
+## 🖥️ Execução Local (sem deploy)
+
+Esta versão roda totalmente local, sem necessidade de deploy em provedores.
+
+### Pré-requisitos
+- Python 3.9+
+- pip
+- Windows, macOS ou Linux
+
+### Passo a passo
+
+```bash
+# (opcional) criar ambiente virtual
+python -m venv .venv
+# Linux/Mac
+source .venv/bin/activate
+# Windows
+.venv\Scripts\activate
+
+# instalar dependências
+pip install -r requirements.txt
+
+# iniciar o servidor Flask
+python app.py
+```
+
+- Acesse `http://localhost:8000` no navegador.
+- No primeiro start, os modelos serão baixados:
+  - Embeddings: `sentence-transformers/all-mpnet-base-v2` (robusto)
+  - QA: `deepset/roberta-base-squad2` (respostas focadas)
+- Enquanto carrega, a interface exibirá “Carregando base de conhecimento...”. Assim que finalizar, muda para “Sistema pronto”.
+
+### Variáveis de ambiente (opcionais)
+- `EMBEDDINGS_MODEL`: modelo de embeddings (padrão robusto)
+- `QA_MODEL`: modelo de QA para respostas focadas
+- `TOP_K`: quantidade final de trechos usados na resposta
+- `CHUNK_CHARS`: tamanho do chunk em caracteres
+- `CHUNK_OVERLAP`: overlap entre chunks
+- `BATCH_SIZE`: lote para cálculo de embeddings
+- `RERANKER_MODEL`: modelo de reranqueamento (CrossEncoder)
+- `RERANK_PRE_K`: candidatos iniciais antes do reranqueamento
+- `CACHE_DIR`: diretório para cache de embeddings
+
+### Dicas de desempenho
+- Se for necessário reduzir latência, aumente recursos da máquina local (RAM/CPU).
+- Para inicialização mais rápida, mantenha o app rodando para evitar novo download/parse em cada execução.
+
+---
+
 ## 🚀 Deploy em Produção
 
 ### Pré-requisitos

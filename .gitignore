@@ -60,6 +60,7 @@ logs/
 *.tmp
 *.temp
 .cache/
+cache/
 
 # Jupyter Notebook
 .ipynb_checkpoints

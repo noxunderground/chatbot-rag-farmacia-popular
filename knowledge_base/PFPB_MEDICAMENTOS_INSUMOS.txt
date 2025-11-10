@@ -1,0 +1,19 @@
+O rol de medicamentos disponibilizado pelo PFPB é definido pelo Ministério da Saúde com base em evidências epidemiológicas e prevalências de doenças e agravos.
+
+O programa Farmácia Popular disponibiliza, gratuitamente, **41 itens** entre medicamentos e insumos.
+
+**Indicações Atendidas Gratuitamente (a partir de Fev/2025):**
+| Indicação | Itens e Princípios Ativos (Exemplos) |
+| :--- | :--- |
+| **Hipertensão Arterial** | Atenolol 25mg, Captopril 25mg, Losartana potássica 50mg, Maleato de Enalapril 10mg, Besilato de anlodipino 5mg, Hidroclorotiazida 25mg. |
+| **Diabetes Mellitus** | Cloridrato de metformina (500mg, 850mg, ação prolongada), Glibenclamida 5mg, Insulina humana NPH, Insulina humana regular. |
+| **Asma** | Brometo de ipratrópio (0,02mg, 0,25mg), Dipropionato de Beclometasona, Sulfato de Salbutamol. |
+| **Diabetes Mellitus + Doença Cardiovascular** | Dapagliflozina 10 mg. |
+| **Dislipidemia (Colesterol Alto)** | Sinvastatina (10mg, 20mg, 40mg). |
+| **Doença de Parkinson** | Carbidopa 25mg + Levodopa 250mg, Cloridrato de Benserazida 25mg + Levodopa 100mg. |
+| **Glaucoma** | Maleato de timolol (2,5mg, 5mg). |
+| **Osteoporose** | Alendronato de Sódio 70mg. |
+| **Rinite** | Budesonida (32mcg, 50mcg), Dipropionato de beclometasona 50mcg/dose. |
+| **Anticoncepção** | Acetato de medroxiprogesterona 150mg, Etinilestradiol 0,03mg + Levonorgestrel 0,15mg, Noretisterona 0,35mg. |
+| **Incontinência Urinária** | Fralda Geriátrica. |
+| **Dignidade Menstrual** | Absorvente higiênico. |

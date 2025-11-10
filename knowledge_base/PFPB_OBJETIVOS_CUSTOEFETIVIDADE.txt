@@ -1,0 +1,22 @@
+**Objetivos e Benefícios**
+O objetivo do PFPB é disponibilizar medicamentos essenciais a preços reduzidos, atuando como uma alternativa relevante de acesso a medicamentos. O programa busca diminuir o impacto do preço dos medicamentos no orçamento familiar, especialmente para cidadãos que dependem da rede privada.
+
+A implementação de políticas de assistência farmacêutica, como o PFPB, é fundamental, pois os medicamentos representam a principal categoria que compromete os orçamentos familiares em gastos com saúde, principalmente naquelas famílias de menor renda. O programa também pode exercer um papel de **salvaguarda das falhas na provisão pública de medicamentos**.
+
+Um aspecto do PFPB é a vinculação da dispensação de medicamentos à apresentação de receituário médico, o que pode funcionar como elemento de inibição da automedicação e ajudar a promover um **uso mais racional da terapia medicamentosa**.
+
+**Impacto Custo-Efetivo**
+O programa foi considerado **custo-efetivo**, o que significa que seu custo compensa o benefício causado.
+*   Pesquisas que monitoraram resultados entre 2006 e 2012 revelaram que o subsídio evitou cerca de **240 mil hospitalizações** (aproximadamente 17%) que poderiam ter ocorrido devido ao diabetes tipo 2.
+*   Essa prevenção de hospitalizações gerou uma **economia de custos na faixa de 13%**.
+*   O impacto positivo é percebido de forma especial entre as camadas mais pobres e mais vulneráveis da população.
+
+**Críticas ao Modelo**
+O modelo de copagamento (extinto em 2025) foi alvo de discussões, pois o SUS sempre se pautou pela gratuidade das ações e serviços, e a exigência de copagamento, mesmo que pequeno, poderia impossibilitar o acesso de quem não pode pagar. As principais críticas incluíam:
+1.  **Venda/Subsídio de medicamentos:** Críticos argumentam que a Constituição garante saúde pública e, portanto, medicamentos gratuitos.
+2.  **Bitributação:** Alegação de que, como os recursos são provenientes de impostos, haveria um novo pagamento por parte dos usuários (copagamento).
+3.  **Uso de Farmácias Próprias (Rede Própria):** Críticos defendiam que o programa deveria ser executado exclusivamente por convênios com a rede privada já existente, alegando que a criação de estabelecimentos públicos ("farmaciabras") era desnecessária e que seria mais econômico fornecer os medicamentos gratuitamente pela rede do SUS.
+4.  **Caráter Mercantil:** A vertente privada do PFPB foca na lógica do consumo de medicamentos, sem ênfase no uso racional, perpetuando a tônica comercial da farmácia.
+
+**Analogia para Solificação:**
+Imagine o PFPB como uma **ponte subsidiada**. Enquanto o SUS é a principal rodovia (que deve ser totalmente gratuita) para o acesso a medicamentos, muitas vezes essa rodovia sofre interrupções ou lentidão (falhas na provisão pública). O Farmácia Popular age como uma ponte alternativa (originalmente com pedágio simbólico, o copagamento, mas agora totalmente gratuita), instalada sobre o comércio privado, garantindo que os cidadãos mais vulneráveis consigam chegar ao seu destino (o tratamento medicamentoso) de forma rápida e com custo zero, complementando a infraestrutura pública de saúde.

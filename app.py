@@ -1,10 +1,11 @@
 import os
+import threading
 from flask import Flask, render_template, request, jsonify
 from rag_engine import RAGEngine
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
-print("Inicializando o motor RAG... (isso pode levar alguns minutos)")
+print("Agendando inicialização do motor RAG em segundo plano...")
 rag_engine = None
 
 # Respostas fallback
@@ -20,12 +21,58 @@ RESPOSTAS = {
     "gratuitos": "Os medicamentos gratuitos incluem: Losartana, Captopril, Propranolol, Atenolol, Metformina, Glibenclamida, Insulina NPH, Insulina Regular, Salbutamol e outros para hipertensão, diabetes e asma."
 }
 
+# Mapeamento simples de sinônimos/variações para chaves conhecidas
+SINONIMOS = {
+    "oi": "Oi",
+    "olá": "Olá",
+    "ola": "Olá",
+    "bom dia": "Olá",
+    "boa tarde": "Olá",
+    "boa noite": "Olá",
+    "gratuidade": "gratuitos",
+    "gratis": "gratuitos",
+    "gratuito": "gratuitos"
+}
+
+def match_fallback(query_lower: str):
+    # casa primeiro por sinônimos
+    for termo, chave in SINONIMOS.items():
+        if termo in query_lower:
+            return RESPOSTAS.get(chave)
+    # depois tenta chaves originais
+    for palavra_chave, texto in RESPOSTAS.items():
+        if palavra_chave.lower() in query_lower:
+            return texto
+    return None
+
 
 def initialize_rag():
-    """Inicializa o motor RAG"""
+    """Inicializa o motor RAG de forma síncrona (usado pela thread)."""
     global rag_engine
     try:
-        rag_engine = RAGEngine()
+        # Configuração via variáveis de ambiente
+        embeddings_model = os.environ.get('EMBEDDINGS_MODEL')
+        qa_model = os.environ.get('QA_MODEL')
+        top_k = int(os.environ.get('TOP_K', '5'))
+        chunk_chars = int(os.environ.get('CHUNK_CHARS', '700'))
+        chunk_overlap = int(os.environ.get('CHUNK_OVERLAP', '80'))
+        batch_size = int(os.environ.get('BATCH_SIZE', '32'))
+        reranker_model = os.environ.get('RERANKER_MODEL')
+        pre_k = int(os.environ.get('RERANK_PRE_K', str(max(top_k * 3, top_k))))
+        cache_dir = os.environ.get('CACHE_DIR', 'cache')
+
+        # Cria instância e roda inicialização
+        rag_engine = RAGEngine(
+            model_name=embeddings_model,
+            qa_model_name=qa_model,
+            top_k=top_k,
+            chunk_chars=chunk_chars,
+            chunk_overlap=chunk_overlap,
+            batch_size=batch_size,
+            reranker_model_name=reranker_model,
+            pre_k=pre_k,
+            cache_dir=cache_dir
+        )
         rag_engine.initialize()
         print("Motor RAG inicializado com sucesso!")
     except Exception as e:
@@ -33,8 +80,14 @@ def initialize_rag():
         rag_engine = None
 
 
-# Inicializar o RAG (pode demorar alguns segundos)
-initialize_rag()
+# Inicialização assíncrona para não bloquear o start do servidor
+def initialize_rag_async():
+    t = threading.Thread(target=initialize_rag, daemon=True)
+    t.start()
+    return t
+
+# Dispara a inicialização em background
+initialize_rag_async()
 
 
 @app.route('/')
@@ -56,6 +109,7 @@ def chat():
     """Endpoint principal do chat"""
     data = request.json
     query = data.get('message', '').strip()
+    query_lower = query.lower()
 
     if not query:
         return jsonify({
@@ -63,34 +117,35 @@ def chat():
             "source": "Sistema"
         })
 
-    # 1️⃣ Tenta usar o RAG Engine
+    # Primeiro, verifica respostas de cortesia/sinônimos antes do RAG
+    resposta_fallback = match_fallback(query_lower)
+    if resposta_fallback:
+        print("Pergunta:", query)
+        print("Resposta fallback (sinônimos):", resposta_fallback)
+        return jsonify({
+            "answer": resposta_fallback,
+            "source": "Ministério da Saúde - Programa Farmácia Popular do Brasil"
+        })
+
+    # 1️⃣ Usa o RAG Engine se disponível
     if rag_engine and getattr(rag_engine, 'initialized', False):
         try:
             result = rag_engine.query(query)
             print("Pergunta:", query)
             print("Resposta RAG:", result['answer'])
             return jsonify({
-                "answer": result['answer'],  # 🔹 chave 'answer' que o front-end espera
+                "answer": result['answer'],
                 "source": result['source']
             })
         except Exception as e:
             print(f"Erro ao usar RAG: {e}")
 
-    # Fallback — usa respostas predefinidas
-    resposta = None
-    query_lower = query.lower()
-
-    for palavra_chave, texto in RESPOSTAS.items():
-        if palavra_chave in query_lower:
-            resposta = texto
-            break
-
-    if not resposta:
-        resposta = (
-            "O Programa Farmácia Popular oferece medicamentos gratuitos ou com desconto "
-            "para a população. Para mais informações, pergunte sobre como funciona, "
-            "medicamentos disponíveis, documentos necessários ou onde encontrar."
-        )
+    # Fallback — mensagem padrão quando RAG não está pronto ou houve erro
+    resposta = (
+        "O Programa Farmácia Popular oferece medicamentos gratuitos ou com desconto "
+        "para a população. Para mais informações, pergunte sobre como funciona, "
+        "medicamentos disponíveis, documentos necessários ou onde encontrar."
+    )
 
     print("Pergunta:", query)
     print("Resposta fallback:", resposta)

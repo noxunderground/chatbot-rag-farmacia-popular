@@ -1,0 +1,13 @@
+O programa atende indicações para:
+- Hipertensão
+- Diabetes
+- Asma
+- Osteoporose
+- Dislipidemia (colesterol alto)
+- Rinite
+- Doença de Parkinson
+- Glaucoma
+- Diabetes mellitus com doenças cardiovasculares
+- Anticoncepção
+- Incontinência (fraldas geriátricas)
+- Programa Dignidade Menstrual (absorventes higiênicos)

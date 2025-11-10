@@ -1,0 +1,16 @@
+O PFPB se estrutura em arranjos que envolvem os setores público e privado.
+
+**Modalidades Históricas e Atuais**
+1. **Rede Própria (RP):** Correspondeu à primeira fase do Programa, implementada a partir de 2004. Envolvia farmácias estatais geridas pela **Fundação Oswaldo Cruz (Fiocruz)**, em convênios com estados, municípios e instituições. A Fiocruz era responsável pela aquisição, estocagem, comercialização e dispensação inicial dos medicamentos.
+    *   A Rede Própria foi **encerrada em dezembro de 2017**.
+2. **Aqui Tem Farmácia Popular (ATFP):** Vertente estabelecida a partir de **2006**, por meio de parcerias com a **rede privada de farmácias e drogarias**.
+    *   O credenciamento dos estabelecimentos ocorre por adesão do empresariado.
+    *   Exige-se um padrão de identidade visual nas farmácias, com a exibição da logomarca específica que identifica o credenciamento ao Programa.
+    *   Os medicamentos disponibilizados por meio da rede privada são **subsidiados**.
+
+**Funcionamento do Subsídio e Gratuidade**
+O PFPB se expandiu com o emprego de ações inéditas, como o copagamento e a ampla utilização do comércio varejista.
+
+*   **Antigo Copagamento:** Na modalidade de copagamento, o MS pagava até 90% do Valor de Referência (VR), e o usuário cobria a diferença.
+*   **"Saúde Não Tem Preço" (Gratuidade Parcial):** Iniciado em 2011, isentou de copagamento medicamentos para o tratamento de **hipertensão, diabetes** e, posteriormente (em 2012), **asma**. Nestes casos, o MS cobria 100% do VR.
+*   **Gratuidade Total (A partir de 2025):** A Portaria GM/MS nº 6.613, de 13 de fevereiro de 2025, **extinguiu a modalidade de copagamento**. A partir de 14 de fevereiro de 2025, o programa passou a disponibilizar **100% dos medicamentos e insumos de seu elenco gratuitamente** à população brasileira.
